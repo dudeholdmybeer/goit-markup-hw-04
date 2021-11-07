@@ -49,7 +49,7 @@ header {
   border-width: 0 0 1px 0;
 }
 
-.link {
+a {
   text-decoration: none;
   font-style: normal;
 }
@@ -116,7 +116,7 @@ header {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -125,27 +125,29 @@ header {
 }
 
 /* Текущая страница */
-.link.current {
+.current {
   color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
 
 /* auth-nav */
 
-.auth-nav .link {
+.auth-nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav-link:hover,
+.auth-nav-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
