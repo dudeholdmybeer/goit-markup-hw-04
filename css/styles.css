@@ -7,7 +7,7 @@
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --third-background-color: #f5f4fa;
-  --icon-color: #AFB1B8
+  --icon-color: #afb1b8;
 }
 
 /* general styles */
@@ -37,7 +37,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto
+  height: auto;
 }
 
 button {
@@ -107,11 +107,6 @@ a {
   margin-right: 50px;
 }
 
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-}
-
 .auth-nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -136,14 +131,19 @@ a {
 
 /* auth-nav */
 
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .auth-nav-link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
 }
 
 .auth-nav-link:hover,
@@ -158,17 +158,17 @@ a {
 }
 
 .icon-mail {
-height: 12px;
-width: 16px;
-fill: currentColor;
-margin-right: 10px;
+  height: 12px;
+  width: 16px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .icon-smartphone {
-height: 16px;
-width: 10px;
-fill: currentColor;
-margin-right: 10px;
+  height: 16px;
+  width: 10px;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* section hero */
@@ -177,15 +177,12 @@ margin-right: 10px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: 
-  linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)),
-  url(../img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 1600px;
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -239,16 +236,18 @@ margin-right: 10px;
 }
 
 .features-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--third-background-color);
-  padding: 25px 100px;
   height: 120px;
   width: 270px;
   margin-bottom: 30px;
 }
 
 .features-icon {
-  height: 100%;
-  width: 100%;
+  height: 70px;
+  width: 70px;
 }
 
 .features-item:not(:last-child) {
@@ -393,28 +392,27 @@ margin-right: 10px;
   width: 170px;
 }
 
-  .customers-link {  
+.customers-link {
   width: 100%;
   height: 100%;
   border: solid 1px;
   border-color: var(--icon-color);
   border-radius: 4px 4px 4px 4px;
-  padding: 16px 32px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
-  .customers-icon {
+.customers-icon {
   fill: var(--icon-color);
-  width: 100%;
-  height: 100%;
-  }
+  width: 106px;
+  height: 60px;
+}
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
-  fill: var(--accent-color); 
+  fill: var(--accent-color);
 }
 
 .customers-link:hover,
@@ -499,14 +497,18 @@ margin-right: 10px;
 
 /* Portfolio buttons */
 
-.portfolio-buttons {
+.portfolio-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button-portfolio {
-  display: inline-block
+.portfolio-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-filter-button {
+  display: inline-block;
   background-color: var(--third-background-color);
   color: var(--title-text-color);
   cursor: pointer;
@@ -517,12 +519,8 @@ margin-right: 10px;
   font-weight: 500;
 }
 
-.button-portfolio-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.button-portfolio:hover,
-.button-portfolio:focus {
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -552,22 +550,23 @@ margin-right: 10px;
   margin-bottom: -30px;
 }
 
+.portfolio-link {
+  display: block;
+}
+
 .portfolio-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus{
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio-item-text {
-padding: 20px 24px;
-border: solid #eee;
-border-width: 0 1px 1px 1px;
+.portfolio-box {
+  padding: 20px 24px;
+  border: solid #eee;
+  border-width: 0 1px 1px 1px;
 }
-
-
-
